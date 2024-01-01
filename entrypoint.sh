@@ -21,7 +21,6 @@ fi
 cp -a ${INPUT_WIKI_FOLDER}/. /wiki
 
 if [ "${INPUT_IGNORE_SAFE_WARNINGS}" = "true" ]; then
-    chown -R $USER:$USER /wiki
     git config --global --add safe.directory /wiki
 fi
 
